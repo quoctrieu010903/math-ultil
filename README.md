@@ -1,3 +1,5 @@
+[![Math Utility Project (CI applied)](https://github.com/quoctrieu010903/math-ultil/actions/workflows/CI-script.yml/badge.svg)](https://github.com/quoctrieu010903/math-ultil/actions/workflows/CI-script.yml)
+
 ## Welcome to Math Utility Repository ver 7.6.2024
 
 ## You will find it this repo the following stuff
