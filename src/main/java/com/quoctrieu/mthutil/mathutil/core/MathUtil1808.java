@@ -34,17 +34,19 @@ public class MathUtil1808 {
     //n = 0...20! vì n = 21! vượt 10 số 0, 18 sô là vừa dủ long
     public static long getFactorial(int n){
         
-        long product = 1; //tích - kết quả phép nhân
+        //long product = 1; //tích - kết quả phép nhân
         //update code again to see green 4er
         if(n < 0 || n > 20 )
             throw new IllegalArgumentException("Invalid n , n must be between 0 to 20!!");
-        if(n == 0 )
-            return 1;
-        for (int i = 1; i <= n; i++) 
-            product*=i; // thuật toán nhân dồn vào
-      
-            
-        return product;
+        if(n == 0  || n == 1)
+            return  1;
+//        for (int i = 1; i <= n; i++) 
+//            product*=i; // thuật toán nhân dồn vào
+//      
+        //return product;
+        return n* getFactorial(n-1);
+        // recursion - đệ quy - gọi lại đệ quy với 1 quy mô khác
+        
     }
     
     
